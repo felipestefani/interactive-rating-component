@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', Arial, Helvetica, sans-serif;
+}
+
+body{
+    position: relative;
+    height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+    color:  hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#containerRate,
+#containerThanks{
+    padding: 25px;
+    width: 345px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsla(213, 20%, 18%, 0.756);
+    border-radius: 15px;
+}
+
+#containerThanks{
+    padding: 15px;
+    display: none;
+    align-items: center;
+}
+
+/*--------------------------Rating template-----------------------*/
+#star{
+    margin: 5px;
+    padding: 12px;
+    background-color:  hsla(216, 12%, 54%, 0.224);
+    border-radius: 100%;
+}
+
+#rating-title,
+#ty-title{
+    font-size: 24px;
+    margin: 15px 5px;
+}
+
+#rating-text,
+#ty-text{
+    margin: 15px 5px;
+    font-size: 14px;
+    line-height: 23px;
+    color:hsl(216, 12%, 54%);
+}
+
+#rating-values{
+    margin: 30px 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-value{
+    text-align: center;
+    padding: 12px 18px;
+    font-size: 14px;
+    color: hsl(216, 12%, 54%);
+    background-color:  hsla(216, 12%, 54%, 0.224);
+    font-weight: 700;
+    border-radius: 100%;
+}
+
+button{
+    width: 100%;
+    padding: 15px;
+    border-radius: 100px;
+    background-color: hsl(25, 97%, 53%);
+    text-transform: uppercase;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    border: none;
+    letter-spacing: 3px;
+}
+
+/*----------------Thank you template-------------------------*/
+#containerThanks{
+    padding: 10px;
+}
+
+#ty-image{
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+}
+
+.ty-value{
+    text-align: center;
+    padding: 5px 12px;
+    font-size: 14px;
+    color: hsla(25, 97%, 53%, 0.59);
+    background-color:  hsla(216, 12%, 54%, 0.224);
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+#ty-title{
+    text-align: center;
+    margin: 30px 0 15px;
+}
+
+#ty-text{
+    text-align: center;
+    margin: 10px 5px 25px;
+}
+
+/*-----------------------template hover--------------------------*/
+.rating-value:hover{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(217, 12%, 63%);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsla(25, 97%, 53%, 0.769);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+/*-----------------------template active--------------------------*/
+.rating-value:active{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%); 
+}
+
+button:active{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%); 
+}
+
+/*-------------classe quando selecionado o valor------------*/
+.selecionado{
+    background-color: hsl(25, 97%, 53%);
+    color:hsl(0, 0%, 100%)
+}
+
+.selecionado:hover{
+    background-color: hsl(25, 97%, 53%);
+    color:hsl(0, 0%, 100%)
+}
+
+
+
+/*-----------------------Footer----------------------*/
+footer{
+    position: absolute;
+    bottom: 10px;
+}
+
+
+@media (min-width: 700px){
+
+#containerRate,
+#containerThanks{
+    padding: 25px;
+    width: 385px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsla(213, 20%, 18%, 0.756);
+    border-radius: 15px;
+}
+
+#containerThanks{
+    display: none;
+}
+}
